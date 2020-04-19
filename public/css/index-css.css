@@ -1,0 +1,165 @@
+body
+{
+ margin:0 auto;
+ padding:0px;
+ text-align:center;
+ width:100%;
+ font-family: "Myriad Pro","Helvetica Neue",Helvetica,Arial,Sans-Serif;
+ background-color:black;
+}
+#wrapper
+{
+ margin:180px auto;
+ padding:0px;
+ text-align:center;
+ width:995px;
+}
+#wrapper h1
+{
+ margin-top:50px;
+ font-size:45px;
+ color:#424949;
+}
+#wrapper h1 p
+{
+font-size:18px;
+}
+.form_div
+{
+width:330px;
+margin-left:320px;
+padding:10px;
+ background-color:#7F8C8D;
+ border-radius:8px;
+ 
+}
+.form_div .form_label
+{
+margin:auto;
+margin-bottom:15px;
+font-size:20px;
+font-weight:bold;
+color:grey;
+padding-top:10px;
+width:200px;
+height:30px;
+border:none;
+border-radius:20px;
+background-color:black;
+border-bottom:3px solid #616A6B;
+color:grey;
+font-weight:bold;
+}
+.form_div input[type="text"]
+{
+width:230px;
+height:40px;
+border-radius:20px;
+font-size:17px;
+padding-left:5px;
+border:none;
+text-align:center;
+}
+.form_div input[type="submit"]
+{
+width:90px;
+height:40px;
+border:none;
+border-radius:20px;
+font-size:18px;
+background-color:black;
+border-bottom:3px solid #616A6B;
+color:white;
+font-weight:bold;
+}
+
+@media only screen and (min-width:700px) and (max-width:995px)
+{
+#wrapper
+{
+width:100%;
+}
+#wrapper h1
+{
+font-size:30px;
+}
+.form_div
+{
+width:50%;
+margin-left:25%;
+padding-left:0px;
+padding-right:0px;
+}
+.form_div .form_label{
+    width:80%;
+}
+.form_div input[type="text"]
+{
+width:80%;
+}
+.form_div textarea
+{
+width:80%;
+}
+.form_div input[type="submit"]
+{
+width:80%;
+}
+}
+@media only screen and (min-width:400px) and (max-width:699px)
+{
+#wrapper
+{
+width:100%;
+}
+#wrapper h1
+{
+font-size:30px;
+}
+
+.form_div .form_label{
+    width:80%;
+}
+.form_div
+{
+width:60%;
+margin-left:20%;
+}
+.form_div input[type="text"]{
+width:80%;
+}
+.form_div input[type="submit"]
+{
+width:80%;
+}
+}
+@media only screen and (min-width:100px) and (max-width:399px)
+{
+#wrapper
+{
+width:100%;
+}
+#wrapper h1
+{
+font-size:25px;
+}
+
+.form_div .form_label{
+    width:80%;
+}
+.form_div
+{
+width:90%;
+margin-left:5%;
+padding-left:0px;
+padding-right:0px;
+}
+.form_div input[type="text"]
+{
+width:80%;
+}
+.form_div input[type="submit"]
+{
+width:80%;
+}
+}

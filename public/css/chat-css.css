@@ -1,0 +1,246 @@
+/* General Styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+html {
+    font-size: 16px;
+}
+
+input {
+    font-size: 14px;
+}
+
+body {
+    line-height: 1.4;
+    color: #333333;
+    font-family: Cursive ;
+}
+
+h1 {
+    margin-bottom: 16px;
+}
+
+label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 8px;
+    color: #777;
+}
+
+
+
+button:hover {
+    background:rgb(95, 93, 93);
+}
+
+button:disabled {
+    cursor: default;
+    background: #6d6b7294;
+}
+
+
+/* Chat Page Layout */
+
+.chat {
+    display: flex;
+}
+
+.chat__sidebar {
+    height: 100vh;
+    color: white;
+    background: #aec3cc;
+    width: 230px;
+    overflow-y: scroll;
+    
+}
+
+/* Chat styles */
+
+.chat__main {
+    flex-grow: 1;
+    display: flex;
+    margin-left:16px;
+    flex-direction: column;
+    background-color:  #aec3cc;
+    
+    max-height: 100vh;
+}
+
+.chat__messages {
+    flex-grow: 1;
+    /* padding: 24px 24px 0 24px; */
+    overflow-y: scroll;
+    margin-left:16px;
+    
+    
+}
+
+/* Message Styles */
+
+.message {
+    margin-bottom: 16px; 
+    
+
+}
+
+.message__name {
+    font-weight: 600;
+    font-size: 14px;
+    margin-right: 8px;
+    
+}
+
+.message__meta {
+    color: #777;
+    font-size: 14px;
+}
+
+.message a {
+    color: #0070CC;
+}
+
+/* Message Composition Styles */
+
+.compose {
+    margin-top: 16px;
+    padding: 24px;
+}
+
+
+.compose input {
+    border: 1px solid #eeeeee;
+    width: 100%;
+    padding: 12px;
+    border-radius: 20px;
+    outline: none;
+    color:white;
+    background: rgb(8, 5, 10);
+}
+
+
+.compose button {
+    cursor: pointer;
+    padding: 12px;
+    border-radius: 20px;
+    outline: none;
+    background: black;
+    border: none;
+    color: white;
+    
+    font-size: 16px;
+    transition: background .3s ease;
+}
+/* Chat Sidebar Styles */
+
+.room-title {
+    font-weight: 400;
+    font-si ze: 22px;
+    background: rgb(44, 52, 58);
+    
+    padding: 24px;   
+}
+
+.list-title {
+    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: 4px;
+    padding: 12px 24px 0 24px;
+}
+
+.users {
+    list-style-type: none;
+    font-weight: 300;
+    padding: 12px 24px 0 24px;
+}
+
+
+@media only screen and (min-width:700px) and (max-width:995px)
+{
+.chat__sidebar{
+  width:35%;
+  }
+.compose
+{
+width:100%;
+padding-left:0px;
+padding-right:0px;
+}
+.compose .form_label{
+    width:80%;
+}
+
+.compose input
+{
+width:100%;
+}
+
+.compose textarea
+{
+width:100%;
+word-wrap: break-word;
+}
+
+}
+@media only screen and (min-width:400px) and (max-width:699px)
+{
+.chat__sidebar{
+  width:35%;
+  
+}
+
+.compose
+{
+width:100%;
+
+padding-left:0px;
+padding-right:0px;
+}
+.compose .form_label{
+    width:100%;
+}
+
+.compose input
+{
+width:100%;
+}
+
+.compose textarea
+{
+width:100%;
+word-wrap: break-word;
+}
+}
+@media only screen and (min-width:100px) and (max-width:399px)
+{
+
+.chat__sidebar{
+  width:35%;
+  
+}
+
+.compose
+{
+width:100%;
+padding-left:0px;
+padding-right:0px;
+}
+.compose .form_label{
+    width:100%;
+}
+
+.compose input
+{
+width:100%;
+}
+
+.compose textarea
+{
+width:100%;
+word-wrap: break-word;
+}
+}
